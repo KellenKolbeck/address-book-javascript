@@ -24,24 +24,24 @@
               <input type="text" class= "form-control" id= "new-last-name">
             </div>
 
-            <div class = "new-addresses">
+            <div id = "new-addresses">
               <div class="new-address">
                 <div class="form-group">
                   <label for="new-street">Street</label>
-                  <input type="text" class= "form-control" id= "new-street">
+                  <input type="text" class= "form-control new-street">
                 </div>
                 <div class="form-group">
                   <label for="new-city">Street</label>
-                  <input type="text" class= "form-control" id= "new-city">
+                  <input type="text" class= "form-control new-city">
                 </div>
                 <div class="form-group">
                   <label for="new-state">State</label>
-                  <input type="text" class= "form-control" id= "new-state">
+                  <input type="text" class= "form-control new-state">
                 </div>
               </div>
             </div>
 
-            <span class="btn btn-primary" id="add-address">Another Address</span>
+            <span class="btn btn-danger" id="add-address">Another Address</span>
 
             <button type="submit" class= "btn btn-danger">Add</button>
 
@@ -57,7 +57,10 @@
 
             <p>First name: <span class="first-name"></span></p>
             <p>Last name: <span class="last-name"></span></p>
-            <p>Address: <span class="address"></span></p>
+            <p>Address:</p>
+            <ul id="addresses">
+
+            </ul>
           </div>
         </div>
       </div>
