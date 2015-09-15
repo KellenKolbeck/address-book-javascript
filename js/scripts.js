@@ -1,3 +1,9 @@
+function Contact(firstName, lastName) {
+  this.firstName = firstName
+  this.lastName = lastName
+  this.addresses = addresses
+}
+
 $(document).ready(function() {
   $("#add-address").click(function() {
     $("#new-addresses").append('<div class="new-address">' +
@@ -49,11 +55,7 @@ $(document).ready(function() {
       });
     });
 
-    $("input#new-first-name").val("");
-    $("input#new-last-name").val("");
-    $("input.new-street").val("");
-    $("input.new-city").val("");
-    $("input.new-state").val("");
+    resetFields();
 
   });
 });
